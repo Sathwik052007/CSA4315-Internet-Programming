@@ -1,0 +1,417 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FRAME & FOCUS | Photography</title>
+
+    <!-- External CSS Files -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="extra.css">
+
+    <!-- Internal CSS -->
+    <style>
+        h2 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        .section-description {
+            text-align: center;
+            color: #aaaaaa;
+            margin-bottom: 40px;
+        }
+
+        /* CSS Cascading Demonstration */
+
+        .cascade-demo p {
+            color: blue;
+        }
+
+        .cascade-demo p {
+            color: gold;
+        }
+
+        /* CSS Specificity Demonstration */
+
+        .specificity-demo p {
+            color: blue;
+        }
+
+        .specificity-demo .demo-text {
+            color: green;
+        }
+
+        .specificity-demo #specificity-result {
+            color: red;
+        }
+
+        /* CSS Inheritance Demonstration */
+
+        .inheritance-demo {
+            color: #d5b36a;
+            font-family: Arial, sans-serif;
+            font-size: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            FRAME <span>&</span> FOCUS
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <!-- HERO SECTION -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="hero-small">WELCOME TO FRAME & FOCUS</p>
+
+            <h1 style="color: white;">
+                Capturing Moments,<br>
+                Creating Memories.
+            </h1>
+
+            <p>
+                Professional Photography That Tells Your Story.
+            </p>
+
+            <a href="#portfolio" class="main-button">
+                EXPLORE PORTFOLIO
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT SECTION -->
+
+    <section class="about section" id="about">
+
+        <div class="about-image">
+
+            <img src="https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=900"
+                alt="Professional photographer">
+
+        </div>
+
+        <div class="about-content">
+
+            <p class="small-title">ABOUT THE PHOTOGRAPHER</p>
+
+            <h2>Behind Every Picture Is A Story</h2>
+
+            <p>
+                Welcome to Frame & Focus. I am a passionate
+                professional photographer dedicated to capturing
+                life's most beautiful moments.
+            </p>
+
+            <p>
+                From weddings and portraits to nature and events,
+                my goal is to transform ordinary moments into
+                extraordinary memories.
+            </p>
+
+            <a href="#contact" class="main-button">
+                GET IN TOUCH
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- SERVICES SECTION -->
+
+    <section class="services section" id="services">
+
+        <p class="small-title center">WHAT I OFFER</p>
+
+        <h2>Photography Services</h2>
+
+        <p class="section-description">
+            Professional photography for every special occasion.
+        </p>
+
+        <div class="service-container">
+
+            <div class="service-card">
+                <div class="service-icon">♡</div>
+                <h3>Wedding Photography</h3>
+                <p>
+                    Capturing unforgettable wedding memories.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">◎</div>
+                <h3>Portrait Photography</h3>
+                <p>
+                    Creating beautiful professional portraits.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">⌁</div>
+                <h3>Nature Photography</h3>
+                <p>
+                    Exploring the beauty of nature.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">✦</div>
+                <h3>Event Photography</h3>
+                <p>
+                    Capturing memorable events and celebrations.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PORTFOLIO GALLERY -->
+
+    <section class="portfolio section" id="portfolio">
+
+        <p class="small-title center">MY CREATIVE WORK</p>
+
+        <h2>Photography Portfolio</h2>
+
+        <p class="section-description">
+            A collection of beautiful moments captured through my lens.
+        </p>
+
+        <div class="gallery">
+
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=800" alt="Wedding photography">
+                <div class="image-label">WEDDING</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=800" alt="Nature photography">
+                <div class="image-label">NATURE</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=800"
+                    alt="Portrait photography">
+                <div class="image-label">PORTRAIT</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800"
+                    alt="Landscape photography">
+                <div class="image-label">LANDSCAPE</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=800"
+                    alt="Creative photography">
+                <div class="image-label">CREATIVE</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=800" alt="Camera photography">
+                <div class="image-label">EQUIPMENT</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=800" alt="Wedding event">
+                <div class="image-label">CELEBRATION</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?w=800" alt="Travel photography">
+                <div class="image-label">TRAVEL</div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CSS CONCEPTS DEMONSTRATION -->
+
+    <section class="css-section section">
+
+        <p class="small-title center">PRACTICAL IMPLEMENTATION</p>
+
+        <h2>CSS Concepts Demonstration</h2>
+
+        <p class="section-description">
+            Understanding how CSS controls webpage appearance.
+        </p>
+
+
+        <!-- CASCADING -->
+
+        <div class="concept-card">
+
+            <h3>1. CSS Cascading Rules</h3>
+
+            <div class="cascade-demo">
+
+                <p>
+                    This text demonstrates CSS cascading.
+                    Its final color is GOLD.
+                </p>
+
+            </div>
+
+            <p class="concept-explanation">
+                Two CSS rules target the same paragraph.
+                Since both have equal specificity, the later
+                declaration overrides the earlier declaration.
+            </p>
+
+        </div>
+
+
+        <!-- SPECIFICITY -->
+
+        <div class="concept-card">
+
+            <h3>2. CSS Specificity</h3>
+
+            <div class="specificity-demo">
+
+                <p class="demo-text" id="specificity-result">
+                    This text demonstrates ID selector priority.
+                </p>
+
+            </div>
+
+            <p class="concept-explanation">
+                Element, class and ID selectors target the same
+                paragraph. The ID selector has higher specificity.
+            </p>
+
+        </div>
+
+
+        <!-- INHERITANCE -->
+
+        <div class="concept-card">
+
+            <h3>3. CSS Inheritance</h3>
+
+            <div class="inheritance-demo">
+
+                <h4>Parent Container</h4>
+
+                <p>
+                    This paragraph inherits the parent's text color.
+                </p>
+
+                <p>
+                    This paragraph inherits the parent's font family.
+                </p>
+
+            </div>
+
+            <p class="concept-explanation">
+                Child elements inherit applicable CSS properties
+                from their parent element.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT SECTION -->
+
+    <section class="contact section" id="contact">
+
+        <p class="small-title center">LET'S CONNECT</p>
+
+        <h2>Let's Capture Your Moments</h2>
+
+        <p class="section-description">
+            Have a special occasion? Let's make it unforgettable.
+        </p>
+
+        <div class="contact-container">
+
+            <div class="contact-info">
+
+                <h3>Contact Information</h3>
+
+                <p>Email: frameandfocus@gmail.com</p>
+
+                <p>Phone: +91 9876543210</p>
+
+                <p>Location: Chennai, India</p>
+
+            </div>
+
+            <form class="contact-form">
+
+                <input type="text" placeholder="Your Name" required>
+
+                <input type="email" placeholder="Your Email" required>
+
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+
+                <button type="submit">
+                    SEND MESSAGE
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-logo">
+            FRAME <span>&</span> FOCUS
+        </div>
+
+        <p>
+            Capturing Moments, Creating Memories.
+        </p>
+
+        <p class="copyright">
+            © 2026 FRAME & FOCUS. All Rights Reserved.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
+```
