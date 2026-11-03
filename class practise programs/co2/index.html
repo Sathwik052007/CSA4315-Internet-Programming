@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration</title>
+</head>
+<body>
+
+<h2>Student Registration</h2>
+
+<form action="RegisterServlet" method="post">
+    Name:
+    <input type="text" name="name" id="name" required>
+    <br><br>
+
+    Email:
+    <input type="email" name="email" required>
+    <br><br>
+
+    <button type="submit">Register</button>
+</form>
+
+<script>
+document.getElementById("name").addEventListener("input", function() {
+    console.log("Entered Name: " + this.value);
+});
+</script>
+
+</body>
+</html>

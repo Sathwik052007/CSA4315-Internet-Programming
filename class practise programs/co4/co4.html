@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Java Web Services</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f0f4f8;
+            color: #263238;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0f172a, #2563eb);
+            color: white;
+            text-align: center;
+            padding: 35px 15px;
+        }
+
+        header h1 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 15px;
+        }
+
+        nav {
+            background: #172554;
+            padding: 16px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #93c5fd;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 30px auto;
+        }
+
+        .welcome {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            box-shadow: 0 3px 12px #00000010;
+        }
+
+        .welcome h2 {
+            color: #1d4ed8;
+            margin-bottom: 12px;
+        }
+
+        .welcome p {
+            line-height: 1.8;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            text-align: center;
+            border-radius: 12px;
+            border-top: 5px solid #2563eb;
+            box-shadow: 0 3px 12px #00000010;
+        }
+
+        .card h3 {
+            color: #1d4ed8;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            line-height: 1.6;
+            font-size: 14px;
+        }
+
+        .section {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            box-shadow: 0 3px 12px #00000010;
+        }
+
+        .section h2 {
+            color: #1d4ed8;
+            margin-bottom: 18px;
+        }
+
+        .calculator {
+            max-width: 450px;
+            margin: auto;
+            background: #eff6ff;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        input {
+            width: 100%;
+            padding: 13px;
+            margin: 10px 0;
+            border: 1px solid #cbd5e1;
+            border-radius: 7px;
+            font-size: 15px;
+        }
+
+        button {
+            background: #2563eb;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 7px;
+            cursor: pointer;
+            font-size: 15px;
+            margin: 8px;
+        }
+
+        button:hover {
+            background: #1e40af;
+        }
+
+        .result {
+            background: white;
+            padding: 15px;
+            margin-top: 18px;
+            border-radius: 8px;
+            color: #15803d;
+            font-weight: bold;
+        }
+
+        .architecture {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+            text-align: center;
+        }
+
+        .architecture div {
+            background: #eff6ff;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #bfdbfe;
+        }
+
+        .architecture h3 {
+            color: #1d4ed8;
+            margin-bottom: 10px;
+        }
+
+        .steps {
+            line-height: 2;
+            padding-left: 25px;
+        }
+
+        .code {
+            background: #172554;
+            color: #bfdbfe;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            line-height: 1.7;
+        }
+
+        footer {
+            background: #172554;
+            color: white;
+            text-align: center;
+            padding: 22px;
+            margin-top: 30px;
+        }
+
+        @media(max-width: 600px) {
+            nav a {
+                display: inline-block;
+                margin: 8px;
+            }
+
+            header h1 {
+                font-size: 23px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Java Web Services</h1>
+    <p>JAX-RPC | WSDL | SOAP | XML Schema</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#calculator">Calculator</a>
+    <a href="#architecture">Architecture</a>
+    <a href="#process">Working</a>
+</nav>
+
+<div class="container">
+
+    <section class="welcome" id="home">
+
+        <h2>Welcome to Web Services Portal</h2>
+
+        <p>
+            Web services allow different applications to communicate
+            and exchange information over a network. Java Web Services
+            use technologies such as JAX-RPC, WSDL, SOAP and XML Schema
+            to provide structured communication between client and
+            server applications.
+        </p>
+
+    </section>
+
+    <div class="cards" id="services">
+
+        <div class="card">
+            <h3>JAX-RPC</h3>
+            <p>
+                Java API for XML-Based Remote Procedure Calls.
+                It allows Java applications to communicate with
+                remote web services.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>WSDL</h3>
+            <p>
+                Web Services Description Language describes
+                web service operations, messages and endpoints.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>SOAP</h3>
+            <p>
+                Simple Object Access Protocol is used to exchange
+                structured messages between applications.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>XML Schema</h3>
+            <p>
+                XML Schema defines the structure, elements
+                and data types of XML documents.
+            </p>
+        </div>
+
+    </div>
+
+    <section class="section" id="calculator">
+
+        <h2>Calculator Web Service Demonstration</h2>
+
+        <p>
+            Enter two numbers and select an operation.
+            This demonstrates the calculation performed by a
+            web service operation.
+        </p>
+
+        <br>
+
+        <div class="calculator">
+
+            <h3>Online Calculator</h3>
+
+            <input type="number" id="num1"
+                   placeholder="Enter First Number">
+
+            <input type="number" id="num2"
+                   placeholder="Enter Second Number">
+
+            <button onclick="calculate('add')">Addition (+)</button>
+
+            <button onclick="calculate('subtract')">Subtraction (-)</button>
+
+            <button onclick="calculate('multiply')">Multiplication (×)</button>
+
+            <button onclick="calculate('divide')">Division (÷)</button>
+
+            <div class="result" id="result">
+                Result will appear here
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="section" id="architecture">
+
+        <h2>Web Service Architecture</h2>
+
+        <div class="architecture">
+
+            <div>
+                <h3>Service Provider</h3>
+                <p>Creates and provides web service operations.</p>
+            </div>
+
+            <div>
+                <h3>WSDL</h3>
+                <p>Describes the available services and operations.</p>
+            </div>
+
+            <div>
+                <h3>SOAP</h3>
+                <p>Transfers structured messages between applications.</p>
+            </div>
+
+            <div>
+                <h3>Service Consumer</h3>
+                <p>Requests and uses the web service.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="section">
+
+        <h2>SOAP Message Structure</h2>
+
+        <p>
+            SOAP messages are represented using XML. A SOAP message
+            contains an Envelope, Header and Body. The Body contains
+            the actual request or response information.
+        </p>
+
+        <br>
+
+        <div class="code">
+            &lt;soap:Envelope&gt;<br>
+            &nbsp;&nbsp;&lt;soap:Header&gt;<br>
+            &nbsp;&nbsp;&lt;/soap:Header&gt;<br><br>
+
+            &nbsp;&nbsp;&lt;soap:Body&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;Add&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&gt;10&lt;/a&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;b&gt;20&lt;/b&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/Add&gt;<br>
+            &nbsp;&nbsp;&lt;/soap:Body&gt;<br>
+            &lt;/soap:Envelope&gt;
+        </div>
+
+    </section>
+
+    <section class="section">
+
+        <h2>WSDL Description</h2>
+
+        <p>
+            WSDL provides information about a web service, including
+            its operations, input parameters, output parameters,
+            communication protocol and service address.
+        </p>
+
+        <br>
+
+        <div class="code">
+            &lt;definitions&gt;<br>
+            &nbsp;&nbsp;&lt;message name="AddRequest"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;Request Parameters<br>
+            &nbsp;&nbsp;&lt;/message&gt;<br><br>
+
+            &nbsp;&nbsp;&lt;message name="AddResponse"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;Response Result<br>
+            &nbsp;&nbsp;&lt;/message&gt;<br><br>
+
+            &nbsp;&nbsp;&lt;service name="CalculatorService"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;Calculator Web Service<br>
+            &nbsp;&nbsp;&lt;/service&gt;<br>
+            &lt;/definitions&gt;
+        </div>
+
+    </section>
+
+    <section class="section" id="process">
+
+        <h2>Working Process of Web Services</h2>
+
+        <ol class="steps">
+            <li>The service provider creates a web service.</li>
+            <li>WSDL describes the available service operations.</li>
+            <li>The client reads the WSDL description.</li>
+            <li>The client sends a SOAP request.</li>
+            <li>The server processes the request.</li>
+            <li>The server returns a SOAP response.</li>
+            <li>The client receives and displays the result.</li>
+        </ol>
+
+    </section>
+
+</div>
+
+<footer>
+    <h3>Java Web Services</h3>
+    <p>CO4 - JAX-RPC, WSDL, SOAP and XML Schema</p>
+</footer>
+
+<script>
+
+function calculate(operation) {
+
+    let a = document.getElementById("num1").value;
+    let b = document.getElementById("num2").value;
+
+    if(a === "" || b === "") {
+        document.getElementById("result").innerHTML =
+            "Please enter both numbers";
+        return;
+    }
+
+    a = Number(a);
+    b = Number(b);
+
+    let answer;
+
+    if(operation === "add") {
+        answer = a + b;
+    }
+
+    else if(operation === "subtract") {
+        answer = a - b;
+    }
+
+    else if(operation === "multiply") {
+        answer = a * b;
+    }
+
+    else if(operation === "divide") {
+
+        if(b === 0) {
+            document.getElementById("result").innerHTML =
+                "Cannot divide by zero";
+            return;
+        }
+
+        answer = a / b;
+    }
+
+    document.getElementById("result").innerHTML =
+        "Calculation Result: " + answer;
+}
+
+</script>
+
+</body>
+</html>

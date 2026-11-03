@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS and JavaScript</title>
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Arial;
+            text-align: center;
+        }
+
+        .box {
+            background-color: white;
+            width: 350px;
+            margin: 100px auto;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        button {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <h1>Student Portal</h1>
+    <input type="text" id="name" placeholder="Enter Name">
+    <br><br>
+    <button onclick="display()">Submit</button>
+    <h3 id="result"></h3>
+</div>
+
+<script>
+function display() {
+    let name = document.getElementById("name").value;
+    document.getElementById("result").innerHTML = "Welcome " + name;
+}
+</script>
+
+</body>
+</html>
