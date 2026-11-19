@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Find trains between stations, check seat availability, manage PNR status, and keep your journey organised.">
+  <title>RailEase | TRAIN RESERVATION PORTAL</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">A BETTER EXPERIENCE STARTS HERE <span>✦</span> MADE FOR EVERY SCREEN</div>
+  <header class="site-header">
+    <a class="brand" href="#home"><span class="brand-mark">🚆</span><span>RailEase<small>TRAIN RESERVATION PORTAL</small></span></a>
+    <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+    <nav class="nav-links"><a href="#home">Home</a><a href="#explore">Find trains</a><a href="#features">PNR status</a><a href="#contact">My journeys</a></nav>
+    <button class="header-cta" data-modal="Sign in">Sign in <span>↗</span></button>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <div class="pill"><span class="pulse"></span> WELCOME TO RAILEASE</div>
+        <h1>Plan your trip.<br>Ride with ease.</h1>
+        <p>Find trains between stations, check seat availability, manage PNR status, and keep your journey organised.</p>
+        <div class="hero-actions"><a class="primary-btn" href="#explore">Find trains <span>↗</span></a><a class="secondary-btn" href="#features">Explore features</a></div>
+        <div class="trust"><div class="avatars"><i>✦</i><i>☺</i><i>✧</i></div><span>Designed for a smoother everyday experience</span></div>
+      </div>
+      <div class="hero-visual">
+        <div class="visual-glow"></div><div class="visual-card">
+          <div class="visual-top"><span>✦ YOUR EXPERIENCE</span><span class="live-dot">● LIVE DEMO</span></div>
+          <div class="visual-symbol">🚆</div>
+          <h2>Search trains</h2><p>Find trains between stations, check seat availability, manage PNR status, and keep your journey organised...</p>
+          <div class="visual-lines"><i></i><i></i><i></i></div>
+          <button class="visual-button" data-modal="Find trains">Find trains <span>→</span></button>
+        </div>
+        <div class="floating-note note-one"><span>✧</span><div><b>Easy to use</b><small>Simple, clear and responsive</small></div></div>
+        <div class="floating-note note-two"><span>✓</span><div><b>Made for you</b><small>Everything in one place</small></div></div>
+      </div>
+    </section>
+    <section class="stats-strip"><div class="stat"><strong>All classes</strong><span>Class options</span></div><div class="stat"><strong>Quick</strong><span>PNR lookup</span></div><div class="stat"><strong>Simple</strong><span>Ticket management</span></div></section>
+    <section class="section" id="explore">
+      <div class="section-heading"><div><span class="eyebrow">CURATED FOR YOU</span><h2>Explore what’s possible<span>.</span></h2><p>Discover the highlights and get started in just a few clicks.</p></div>
+      <div class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Search here..."><kbd>ENTER</kbd></div></div>
+      <div class="card-grid" id="cardGrid">
+        <article class="item-card">
+          <div class="item-art art-1"><span>🚆</span><small>Sleeper · 3A · 2A</small></div>
+          <div class="item-body"><div class="item-top"><span class="eyebrow">FEATURED</span><span class="status">Check availability</span></div>
+            <h3>Chennai Express</h3><p>Chennai → Bengaluru</p><button class="text-btn" data-detail="Chennai Express">View details <span>↗</span></button>
+          </div>
+        </article>
+        <article class="item-card">
+          <div class="item-art art-2"><span>🚆</span><small>Sleeper · 3A · 2A</small></div>
+          <div class="item-body"><div class="item-top"><span class="eyebrow">FEATURED</span><span class="status">Check availability</span></div>
+            <h3>Pandian Express</h3><p>Chennai → Madurai</p><button class="text-btn" data-detail="Pandian Express">View details <span>↗</span></button>
+          </div>
+        </article>
+        <article class="item-card">
+          <div class="item-art art-3"><span>🚆</span><small>CC · 2S</small></div>
+          <div class="item-body"><div class="item-top"><span class="eyebrow">FEATURED</span><span class="status">Check availability</span></div>
+            <h3>Vaigai Express</h3><p>Chennai → Madurai</p><button class="text-btn" data-detail="Vaigai Express">View details <span>↗</span></button>
+          </div>
+        </article>
+        <article class="item-card">
+          <div class="item-art art-4"><span>🚆</span><small>Sleeper · 3A · 2A</small></div>
+          <div class="item-body"><div class="item-top"><span class="eyebrow">FEATURED</span><span class="status">Check availability</span></div>
+            <h3>Cheran Express</h3><p>Coimbatore → Chennai</p><button class="text-btn" data-detail="Cheran Express">View details <span>↗</span></button>
+          </div>
+        </article></div>
+      <p class="empty-state" id="emptyState">No matching items found. Try another search.</p>
+    </section>
+    <section class="feature-section" id="features">
+      <div class="feature-intro"><span class="eyebrow">BUILT AROUND YOUR NEEDS</span><h2>Everything you need.<br><em>Nothing you don’t.</em></h2><p>Thoughtful features make every step feel easier. Explore the key modules included in this lab project.</p><a href="#contact" class="text-btn">Get started <span>↗</span></a></div>
+      <div class="feature-list"><div class="feature"><span class="check">✓</span><span>Passenger login and registration</span></div><div class="feature"><span class="check">✓</span><span>Search route, date and class</span></div><div class="feature"><span class="check">✓</span><span>Train list and seat availability</span></div><div class="feature"><span class="check">✓</span><span>Passenger details and fare payment demo</span></div><div class="feature"><span class="check">✓</span><span>PNR status: Confirmed, RAC or Waiting List</span></div><div class="feature"><span class="check">✓</span><span>Cancellation and refund rule management</span></div></div>
+    </section>
+    <section class="bottom-cta" id="contact"><div><span class="eyebrow">READY WHEN YOU ARE</span><h2>Let’s make it happen.</h2><p>Try the interactive demo and explore the experience.</p></div><button class="primary-btn" data-modal="Get started">Get started <span>↗</span></button></section>
+  </main>
+  <footer><a class="brand footer-brand" href="#home"><span class="brand-mark">🚆</span><span>RailEase<small>TRAIN RESERVATION PORTAL</small></span></a><p>© 2026 RailEase. Internet Programming Lab · Experiment 4</p><a href="#home">Back to top ↑</a></footer>
+  <div class="modal-backdrop" id="modalBackdrop"><div class="modal"><button class="modal-close" aria-label="Close">×</button><span class="eyebrow">INTERACTIVE DEMO</span><h2 id="modalTitle">Welcome</h2><p>This is a front-end demonstration. Your action has been captured locally for this demo.</p><form id="demoForm"><label>Your name<input required placeholder="Enter your name"></label><label>Email address<input required type="email" placeholder="you@example.com"></label><button class="primary-btn" type="submit">Continue <span>↗</span></button></form><p class="form-message" id="formMessage"></p></div></div>
+  <script src="script.js"></script>
+</body></html>

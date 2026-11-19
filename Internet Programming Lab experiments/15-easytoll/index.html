@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="EasyToll — Digital toll payments">
+<title>EasyToll | Internet Programming Experiment 15</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="topbar"><div class="container topbar-inner"><span>INTERNET PROGRAMMING LAB · EXPERIMENT 15</span><span>Thoughtfully designed. Easy to use.</span></div></div>
+<header class="header"><div class="container nav">
+<a class="brand" href="#"><span class="brand-mark">E</span><span>EasyToll<small>Digital toll payments</small></span></a>
+<button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+<nav id="mainNav"><a href="#home">Home</a><a href="#explore">Explore</a><a href="#features">Features</a><a href="#about">About</a></nav>
+<div class="nav-actions"><button class="outline-btn" id="accountBtn">My account</button><button class="primary-btn" id="primaryAction">Get started</button></div>
+</div></header>
+<main>
+<section class="hero" id="home"><div class="container hero-grid"><div class="hero-copy"><div class="pill"><span class="dot"></span> Digital toll payments</div>
+<p class="overline">A SMARTER WAY TO TRAVEL SMOOTHLY</p>
+<h1>Less waiting at toll gates<em>. More time on the road.</em></h1>
+<p class="hero-desc">Digital toll payments Explore a simple, reliable experience designed around your needs.</p>
+<div class="hero-actions"><a class="primary-btn large" href="#explore">Explore now <span>↗</span></a><a class="text-link" href="#features">Discover features <span>→</span></a></div>
+<div class="trust-row"><div class="avatar-stack"><i>A</i><i>M</i><i>R</i></div><div><strong>Made for a better experience</strong><small>Simple · Clear · Responsive</small></div></div></div>
+<div class="hero-visual"><div class="visual-glow"></div><div class="visual-panel"><div class="panel-top"><span class="panel-dot"></span><span class="panel-dot"></span><span class="panel-dot"></span><span class="panel-label">YOUR EASYTOLL SPACE</span></div><div class="visual-main"><div class="visual-icon">▦</div><p class="visual-kicker">WELCOME TO EASYTOLL</p><h2>A smoother journey</h2><p class="visual-sub">Digital toll payments</p><div class="visual-stat"><div><strong>Quick</strong><small>Designed around you</small></div><span class="stat-arrow">↗</span></div></div></div><div class="floating-note"><span>✦</span><div><strong>Designed with care</strong><small>A seamless experience</small></div></div></div>
+</div></section>
+<section class="search-section"><div class="container search-card"><div><span class="search-icon">⌕</span><div><strong>What are you looking for?</strong><small>Search and discover in just a few clicks</small></div></div><div class="search-controls"><input id="searchInput" type="search" placeholder="Search toll services or passes..." aria-label="Search"><button class="primary-btn" id="searchBtn">Search</button></div></div></section>
+<section class="section container" id="explore"><div class="section-heading"><div><p class="overline">CURATED FOR YOU</p><h2>Discover what’s possible</h2><p>Thoughtful choices, clear details and a smoother experience.</p></div><a href="#features" class="text-link">See how it works →</a></div>
+<div class="filters"><button class="filter-btn active" data-filter="All">All</button><button class="filter-btn " data-filter="Featured">Featured</button><button class="filter-btn " data-filter="Popular">Popular</button></div><div class="product-grid" id="productGrid">
+      <article class="product-card feature-card"><div class="product-art art-1"><span>₹</span><small>Wallet</small></div><div class="product-info"><span class="eyebrow">Digital wallet</span><h3>Fast toll payments</h3><p>Add demo balance and use it to purchase a digital toll ticket.</p><div class="product-bottom"><strong>Wallet balance</strong><button class="small-btn" id="addMoney">Add funds</button></div><small class="muted">Demo balance only</small></div></article>
+      <article class="product-card feature-card"><div class="product-art art-2"><span>▦</span><small>QR pass</small></div><div class="product-info"><span class="eyebrow">Digital pass</span><h3>Your toll pass</h3><p>Apply for a new pass or renew an existing pass.</p><div class="product-bottom"><strong>Pass management</strong><button class="small-btn" id="showPass">View pass</button></div><small class="muted">Sample QR display</small></div></article>
+      <article class="product-card feature-card"><div class="product-art art-3"><span>↗</span><small>History</small></div><div class="product-info"><span class="eyebrow">Transactions</span><h3>Payment history</h3><p>Review recent demo transactions and payment summaries.</p><div class="product-bottom"><strong>Activity</strong><button class="small-btn" id="historyBtn">View history</button></div><small class="muted">Sample records</small></div></article></div><p class="empty-state" id="emptyState" hidden>No matching results. Try another search.</p>
+</section>
+<section class="feature-section" id="features"><div class="container feature-layout"><div><p class="overline">BUILT AROUND YOUR NEEDS</p><h2>Everything you need.<br><em>All in one place.</em></h2><p class="feature-intro">From the first click to the final step, every detail is designed to keep things clear and convenient.</p><a class="text-link" href="#about">Learn more about the platform →</a></div><div class="feature-list"><div class="feature"><span class="check">✓</span><span>Register and manage vehicle details</span></div><div class="feature"><span class="check">✓</span><span>Add money to a demo e-wallet</span></div><div class="feature"><span class="check">✓</span><span>Buy e-tickets and apply for toll passes</span></div><div class="feature"><span class="check">✓</span><span>View QR pass and transaction history</span></div><div class="feature"><span class="check">✓</span><span>Admin approval and toll-gate verification</span></div></div></div></section>
+<section class="section container" id="about"><div class="about-card"><div><p class="overline">THE EASYTOLL DIFFERENCE</p><h2>Simple by design.<br><em>Helpful by nature.</em></h2><p>Digital toll payments This student project demonstrates a clean front-end workflow using HTML, CSS and JavaScript.</p></div><div class="about-badge"><span>✦</span><strong>Experiment 15</strong><small>Internet Programming Lab</small></div></div></section>
+</main>
+<footer><div class="container footer-inner"><a class="brand" href="#"><span class="brand-mark">E</span><span>EasyToll<small>Internet Programming Lab</small></span></a><span>© 2026 EasyToll. Student demonstration website.</span><a href="#home">Back to top ↑</a></div></footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div class="modal-backdrop" id="modalBackdrop" hidden><div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" id="modalClose" aria-label="Close">×</button><p class="overline">QUICK ACTION</p><h2 id="modalTitle">Welcome</h2><div id="modalContent"></div></div></div>
+<script src="script.js"></script>
+</body></html>
